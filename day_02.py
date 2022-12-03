@@ -32,12 +32,14 @@ def __main__():
     with open('day_02_input.txt') as myFile:
         for x in myFile.readlines():
             them, us = x.strip().split(" ")
-            puzzle_2_outcome = outcomeTable[us]
+            puzzle_2_outcome = outcomeTable[us] # Stash this for later
+            # Parse puzzle 1 info
             them, us = themTable[them], usTable[us]
             base_score = calculate_base_score(us)
             score = calculate_main_score(us, them)
             puzzle_1_total += base_score + score
 
+            # Parse puzzle 2 info
             us = outcomeDecision[them][puzzle_2_outcome]
             base_score = calculate_base_score(us)
             score = calculate_main_score(us, them)
