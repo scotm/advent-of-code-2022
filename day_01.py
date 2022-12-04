@@ -11,6 +11,7 @@ with open('day_01_input.txt') as my_file:
             elf_bundle.append(int(x))
 
 newData = sorted([sum(x) for x in data])
-print("Answer 1: " + str(max(newData)))
 topThree = newData[-3:]
-print("Answer 2: " + str(sum(topThree)))
+
+print(f"Answer 1: {max(newData)}")
+print(f"Answer 2: {sum(topThree)}")

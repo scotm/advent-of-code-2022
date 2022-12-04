@@ -28,5 +28,5 @@ with open('day_03_input.txt') as myFile:
         this_set = set(group[0]).intersection(set(group[1])).intersection(set(group[2]))
         group_priority_sum += translation_table[list(this_set)[0]]
 
-print("Answer 1: "+str(priority_sum))
-print("Answer 2: "+str(group_priority_sum))
+print(f"Answer 1: {priority_sum}")
+print(f"Answer 2: {group_priority_sum}")

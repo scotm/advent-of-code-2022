@@ -45,8 +45,7 @@ def __main__():
             score = calculate_main_score(us, them)
             puzzle_2_total += base_score + score
 
-    print("Solution for puzzle 1: " + str(puzzle_1_total))
-    print("Solution for puzzle 2: " + str(puzzle_2_total))
-
+    print(f"Answer 1: {puzzle_1_total}")
+    print(f"Answer 2: {puzzle_2_total}")
 
 __main__()
