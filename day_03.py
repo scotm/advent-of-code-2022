@@ -16,8 +16,7 @@ with open('day_03_input.txt') as myFile:
     for line in myFile.readlines():
         line = line.strip()
         piece_1, piece_2 = line[:int(len(line) / 2)], line[int(len(line) / 2):]
-        piece_1 = set(piece_1)
-        piece_2 = set(piece_2)
+        piece_1, piece_2 = set(piece_1), set(piece_2)
         common_set = piece_1.intersection(piece_2)
         priority_sum += translation_table[list(common_set)[0]]
 
