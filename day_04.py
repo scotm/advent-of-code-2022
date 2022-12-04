@@ -14,7 +14,7 @@ with open('day_04_input.txt') as myFile:
         if len(intersection) == len(set_2) or len(intersection) == len(set_1):
             puzzle_1_count += 1
 
-        # If there are any overlaps
+        # If there are any overlaps at all
         if len(intersection) > 0:
             puzzle_2_count += 1
 
